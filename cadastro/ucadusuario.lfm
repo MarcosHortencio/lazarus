@@ -1,0 +1,195 @@
+inherited frmCadUsuario: TfrmCadUsuario
+  Left = 681
+  Height = 389
+  Top = 356
+  Width = 831
+  Caption = 'Cadastro de Usuário'
+  ClientHeight = 389
+  ClientWidth = 831
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesigned
+  inherited pnlTitulo: TPanel
+    Width = 831
+    ClientWidth = 831
+    inherited imgIcon: TImage
+      Height = 30
+      Width = 30
+      Picture.Data = {
+        1754506F727461626C654E6574776F726B477261706869632603000089504E47
+        0D0A1A0A0000000D494844520000001E0000001E080400000091396629000000
+        0467414D410000B18F0BFC6105000000206348524D00007A26000080840000FA
+        00000080E8000075300000EA6000003A98000017709CBA513C00000002624B47
+        440000AA8D2332000000097048597300000DD700000DD70142289B7800000007
+        74494D4507E3011902023855C5FC5B000001F44944415438CBAD943F68535114
+        C6BF1B22B5499436285628486D8B8B8216948038B45B11C950141C8A593A8AB8
+        7470F0DF60112AB48B7FD6AA1DECE42686565C94521B445C4A4B0591FA2FB691
+        26E0949F8B89F7DD775F12D0B39DEF9CEF3BE77EF7BD2BFD4398C6650635AC3E
+        EDD2B656F5CCBC6899CC5ECD29AD277AAFB2523AAC73DAD459F3BD8595302C70
+        0B1340267849F43876D04F8643C41964D96D24C65B86FEE671AB94D04DE554D4
+        96BA94D086F206E78C55F21AD04288CC4ECD6B5547CD2749A247F755F1AC5656
+        D237F9B23EEB426D96F9C0EB08338D8F9CD37977CDC654DB8C2AB140FE86114F
+        D7084B3E328DC5EA7E57C3603A448E38828DD7D4737AEC7455D8EFA176AB1C26
+        EFD69AD337A9BB216AA716753BAC38CE1D07E9A04487835D62D677925E8AF438
+        D80C570279928F1CF71B718F1B21C16FB62053CCF84D140729D2EF60535CB37D
+        261DACD7EFD2AC6B5C4F1DC552F08B329B1164498FD4EB90FBF4C3CA7E724051
+        4117252BEBE601EBECB190ABAC90F53E061C61A9765DA4B8CE1693743A3D6728
+        507004686782AF8C61240C636CF0D0BF22862C050A0CD78093AC31CB3E4922C6
+        1CAF38A6068121CB0AD39238C1174ED70B179927AEA641926546C573462DF01D
+        99E65449628845B14DCA827ED1D622B99D4A5C2965AC5FB44DA79ABF457F2261
+        C8B7DAFB9FE3379AE6FB4BC56234320000002574455874646174653A63726561
+        746500323031392D30312D32355430313A30323A35362B30313A3030E77A8505
+        0000002574455874646174653A6D6F6469667900323031392D30312D32355430
+        313A30323A35362B30313A303096273DB90000001974455874536F6674776172
+        65007777772E696E6B73636170652E6F72679BEE3C1A0000000049454E44AE42
+        6082
+      }
+    end
+    inherited lblTitulo: TLabel
+      Left = 54
+      Height = 29
+      Width = 83
+      Caption = 'Usuário'
+    end
+  end
+  inherited pnlBotoes: TPanel
+    Top = 327
+    Width = 831
+    ClientWidth = 831
+    inherited btnNovo: TBitBtn
+      OnClick = btnNovoClick
+    end
+    inherited btnAlterar: TBitBtn
+      OnClick = btnAlterarClick
+    end
+    inherited btnCancelar: TBitBtn
+      OnClick = btnCancelarClick
+    end
+    inherited btnGravar: TBitBtn
+      OnClick = btnGravarClick
+    end
+    inherited btnApagar: TBitBtn
+      OnClick = btnApagarClick
+    end
+    inherited btnNavigator: TDBNavigator
+      Hints.Strings = (      )
+    end
+    inherited btnFechar: TBitBtn
+      Left = 737
+      OnClick = btnFecharClick
+    end
+  end
+  inherited pgcPrincipal: TPageControl
+    Height = 265
+    Top = 62
+    Width = 831
+    inherited tabListagem: TTabSheet
+      ClientHeight = 232
+      ClientWidth = 823
+      inherited pnlListagemTopo: TPanel
+        Width = 823
+        ClientWidth = 823
+        inherited lblIndice: TLabel
+          Height = 20
+          Width = 57
+        end
+        inherited mskPesquisa: TMaskEdit
+          Height = 28
+        end
+      end
+      inherited pnlListagemCentro: TPanel
+        Height = 157
+        Top = 75
+        Width = 823
+        ClientHeight = 157
+        ClientWidth = 823
+        inherited grdListagem: TDBGrid
+          Height = 155
+          Width = 821
+        end
+      end
+    end
+    inherited tabManutencao: TTabSheet
+      ClientHeight = 232
+      ClientWidth = 823
+      object edtUsuarioId: TLabeledEdit[0]
+        Tag = 1
+        Left = 12
+        Height = 28
+        Top = 32
+        Width = 350
+        EditLabel.Height = 20
+        EditLabel.Width = 350
+        EditLabel.Caption = 'Código'
+        EditLabel.ParentColor = False
+        MaxLength = 36
+        TabOrder = 0
+      end
+      object edtNome: TLabeledEdit[1]
+        Tag = 2
+        Left = 12
+        Height = 28
+        Top = 80
+        Width = 581
+        EditLabel.Height = 20
+        EditLabel.Width = 581
+        EditLabel.Caption = 'Usuário'
+        EditLabel.ParentColor = False
+        MaxLength = 50
+        TabOrder = 1
+      end
+      object edtSenha: TLabeledEdit[2]
+        Tag = 2
+        Left = 12
+        Height = 28
+        Top = 130
+        Width = 413
+        EchoMode = emPassword
+        EditLabel.Height = 20
+        EditLabel.Width = 413
+        EditLabel.Caption = 'Senha'
+        EditLabel.ParentColor = False
+        MaxLength = 40
+        PasswordChar = '*'
+        TabOrder = 2
+      end
+    end
+  end
+  inherited qryListagem: TZQuery
+    SQL.Strings = (
+      'SELECT usuarioID,'
+      '       Nome,'
+      #9'   Senha'
+      '  FROM usuarios'
+    )
+  end
+  object PoupNotificacao: TPopupNotifier[5]
+    Color = clInfoBk
+    Icon.Data = {
+      07544269746D617000000000
+    }
+    Text = 'Text'
+    TextFont.CharSet = ANSI_CHARSET
+    TextFont.Color = clBlack
+    TextFont.Height = -20
+    TextFont.Pitch = fpVariable
+    TextFont.Quality = fqDraft
+    Title = 'Aviso !'
+    TitleFont.CharSet = ANSI_CHARSET
+    TitleFont.Color = clBlack
+    TitleFont.Height = -23
+    TitleFont.Pitch = fpVariable
+    TitleFont.Quality = fqDraft
+    TitleFont.Style = [fsBold]
+    Visible = False
+    Left = 776
+    Top = 16
+  end
+  object TmrPoup: TTimer[6]
+    Enabled = False
+    Interval = 5000
+    OnTimer = TmrPoupTimer
+    Left = 680
+    Top = 16
+  end
+end

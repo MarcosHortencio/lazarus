@@ -1,0 +1,48 @@
+object dtmPrincipal: TdtmPrincipal
+  OldCreateOrder = False
+  Height = 335
+  HorizontalOffset = 214
+  VerticalOffset = 3
+  Width = 709
+  PPI = 120
+  object ConDataBase: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    ClientCodepage = 'utf8'
+    Properties.Strings = (
+      'AutoEncodeStrings=True'
+      'codepage=utf8'
+      'controls_cp=CP_UTF16'
+    )
+    TransactIsolationLevel = tiReadCommitted
+    SQLHourGlass = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'dbvendas'
+    User = 'root'
+    Password = '123456'
+    Protocol = 'mysql'
+    LibraryLocation = 'D:\projetos\lazarus\curso_lazarus-Curso_Lazarus_MySQL\dll\libmariadb.dll'
+    Left = 100
+    Top = 40
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    ClientCodepage = 'UTF8'
+    Properties.Strings = (
+      'codepage=UTF8'
+      'controls_cp=CP_UTF8'
+      'AutoEncodeStrings=ON'
+    )
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'dbvendas'
+    User = 'root'
+    Password = '123456'
+    Protocol = 'mysql'
+    LibraryLocation = 'D:\projetos\lazarus\curso_lazarus-Curso_Lazarus_MySQL\dll\libmariadb.dll'
+    Left = 216
+    Top = 40
+  end
+end
