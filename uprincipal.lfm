@@ -2,10 +2,10 @@ object frmPrincipal: TfrmPrincipal
   Left = -9
   Height = 1102
   Top = -9
-  Width = 1496
+  Width = 1514
   Caption = 'Sistema de Vendas'
   ClientHeight = 1055
-  ClientWidth = 1496
+  ClientWidth = 1514
   DesignTimePPI = 120
   Menu = mmuPrincipal
   OnClose = FormClose
@@ -17,7 +17,7 @@ object frmPrincipal: TfrmPrincipal
     Left = 0
     Height = 964
     Top = 62
-    Width = 1496
+    Width = 1514
     Align = alClient
     TabOrder = 0
   end
@@ -25,10 +25,10 @@ object frmPrincipal: TfrmPrincipal
     Left = 0
     Height = 62
     Top = 0
-    Width = 1496
+    Width = 1514
     Align = alTop
     ClientHeight = 62
-    ClientWidth = 1496
+    ClientWidth = 1514
     Color = clBlue
     ParentColor = False
     TabOrder = 1
@@ -53,7 +53,7 @@ object frmPrincipal: TfrmPrincipal
       OnClick = Label1Click
     end
     object pnlDbImg: TPanel
-      Left = 1455
+      Left = 1473
       Height = 60
       Top = 1
       Width = 40
@@ -122,7 +122,7 @@ object frmPrincipal: TfrmPrincipal
     Left = 0
     Height = 29
     Top = 1026
-    Width = 1496
+    Width = 1514
     Panels = <    
       item
         Width = 62
